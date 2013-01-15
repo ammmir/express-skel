@@ -1,0 +1,9 @@
+<html>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io.connect('/');
+  socket.on('hello', function(data) {
+    socket.emit('hello', prompt('Server says hello ' + data));
+  });
+</script>
+</html>

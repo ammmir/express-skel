@@ -1,0 +1,17 @@
+{
+  "name": "express-skel",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  "dependencies" : {
+    "cheerio": ">=0.7.0 <1.0.0",
+    "connect-redis": "1.4.x",
+    "express": "3.0.x",
+    "facile": "0.1.x",
+    "redis": "0.8.x",
+    "socket.io": "0.9.x"
+  }
+}
