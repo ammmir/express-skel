@@ -89,7 +89,7 @@ app.use(require('./lib/http').application);
 var server = http.createServer(app);
 
 // uncomment if you want socket.io
-var io = require('socket.io').listen(server);
+/*var io = require('socket.io').listen(server);
 
 io.configure(function() {
   io.set('transports', ['websocket', 'xhr-polling']);
@@ -116,7 +116,7 @@ io.configure(function() {
 });
 
 // socket connection handler lives in its own local module
-io.sockets.on('connection', require('./lib/http').socket);
+io.sockets.on('connection', require('./lib/http').socket);*/
 
 server.listen(process.env.PORT || 8080, function() {
   console.log("MyApp listening on port %d", server.address().port);
